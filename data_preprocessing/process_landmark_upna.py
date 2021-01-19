@@ -192,13 +192,13 @@ def main():
     for root, dirs, files in os.walk(dataset_path, topdown=True):
         for name in sorted(dirs):
             folder_index = int(name.split("_")[-1])
-            if int(folder_index) == 1:
-                print(name)
-                dir_path = os.path.join(root, name)
-                extract_all_frames(dir_path, name)
-                samples = dump_pyr_xyc(dir_path, max_angle, name)
-                # print(len(samples.keys()))
-                data.update(samples)
+            # if int(folder_index) == 1:
+            print(name)
+            dir_path = os.path.join(root, name)
+            extract_all_frames(dir_path, name)
+            samples = dump_pyr_xyc(dir_path, max_angle, name)
+            # print(len(samples.keys()))
+            data.update(samples)
     
     output = open(output_path+'landmarks_all.pkl', 'wb')
     pickle.dump(data, output)
