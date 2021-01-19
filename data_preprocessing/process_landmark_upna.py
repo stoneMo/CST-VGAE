@@ -200,7 +200,7 @@ def main():
             # print(len(samples.keys()))
             data.update(samples)
     
-    output = open(output_path+'landmarks_all.pkl', 'wb')
+    output = open(output_path+'UPNA_landmarks_all.pkl', 'wb')
     pickle.dump(data, output)
     output.close()
     print(f'save landmark file finished!!!')
