@@ -200,6 +200,7 @@ def main():
             # print(len(samples.keys()))
             data.update(samples)
     
+    print(len(data.keys()))
     output = open(output_path+'UPNA_landmarks_all.pkl', 'wb')
     pickle.dump(data, output)
     output.close()
