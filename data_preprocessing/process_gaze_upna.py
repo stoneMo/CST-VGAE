@@ -85,7 +85,7 @@ def dump_pyr_xyc(pose_path, max_angle, name):
     #             roll = -np.arctan2(data[1][0], data[0][0]) * 180 / np.pi
     #             yaw = -np.arctan2(-data[2][0], np.sqrt(data[2][1] ** 2 + data[2][2] ** 2)) * 180 / np.pi
     #             pitch = np.arctan2(data[2][1], data[2][2]) * 180 / np.pi
-    for file in sorted(file_list)[:10]:
+    for file in sorted(file_list):
         print(file)
         if file.endswith('.jpg'):
 
@@ -148,12 +148,12 @@ def main():
     for root, dirs, files in os.walk(dataset_path, topdown=True):
         for name in sorted(dirs):
             folder_index = int(name.split("_")[-1])
-            if int(folder_index) == 1:
-                print(name)
-                dir_path = os.path.join(root, name)
-                samples = dump_pyr_xyc(dir_path, max_angle, name)
-                print(len(samples.keys()))
-                data.update(samples)
+            # if int(folder_index) == 1:
+            print(name)
+            dir_path = os.path.join(root, name)
+            samples = dump_pyr_xyc(dir_path, max_angle, name)
+            print(len(samples.keys()))
+            data.update(samples)
             
     output = open(output_path+'UPNA_gaze_all.pkl', 'wb')
     pickle.dump(data, output)
