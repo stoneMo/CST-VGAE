@@ -154,7 +154,8 @@ def main():
             samples = dump_pyr_xyc(dir_path, max_angle, name)
             print(len(samples.keys()))
             data.update(samples)
-            
+    
+    print(len(data.keys()))
     output = open(output_path+'UPNA_gaze_all.pkl', 'wb')
     pickle.dump(data, output)
     output.close()
