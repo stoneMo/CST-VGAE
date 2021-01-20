@@ -102,13 +102,13 @@ def main():
         for name in sorted(dirs):
             folder_index = int(name.split("_")[-1])
             print("folder_index:", folder_index)
-            if int(folder_index) == 1:
-                dir_path = os.path.join(root, name)
-                samples, max_ang, min_ang = dump_pyr_xyc(dir_path, max_angle, name)
+            # if int(folder_index) == 1:
+            dir_path = os.path.join(root, name)
+            samples, max_ang, min_ang = dump_pyr_xyc(dir_path, max_angle, name)
 #                 print(len(samples.keys()))
 #                 print(f'max_angle:{max_ang}, min_angle:{min_ang}')
 
-                data.update(samples)
+            data.update(samples)
     
 #     print(len(data.keys()))
 
