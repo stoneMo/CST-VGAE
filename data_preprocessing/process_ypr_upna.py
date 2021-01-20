@@ -110,7 +110,7 @@ def main():
 
             data.update(samples)
     
-#     print(len(data.keys()))
+    print(len(data.keys()))
 
     output = open(output_path+'UPNA_YPR_all.pkl', 'wb')
     pickle.dump(data, output)
