@@ -37,17 +37,17 @@ def find_19_points_st_gcn(key_points):
         if i in graph_points_list:
             x = key_points[i][0]
             y = key_points[i][1]
-            graph_points.append((x,y))
-            # graph_points.append(y)
+            graph_points.append(x)
+            graph_points.append(y)
 
     #print(graph_points)
 
-    norm_graph_points = style_19_points(graph_points)
+    # norm_graph_points = style_19_points(graph_points)
     #print(norm_graph_points)
 
     data_numpy = np.zeros((2, 19))
-    data_numpy[0, :] = norm_graph_points[0::2]
-    data_numpy[1, :] = norm_graph_points[1::2]
+    data_numpy[0, :] = graph_points[0::2]
+    data_numpy[1, :] = graph_points[1::2]
 
     #print(data_numpy)
 
