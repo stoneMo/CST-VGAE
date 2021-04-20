@@ -1,7 +1,7 @@
 
 # Long-term Head Pose Forecasting Conditioned on the Gaze-guiding Prior
 
-**[accepted to 2021 CVPR Workshop]**
+**[accepted to 2021 CVPR Workshops]**
 
 ![alt text](https://github.com/stoneMo/CST-VGAE/blob/main/imgs/title_image.png?raw=true)
 
@@ -102,3 +102,12 @@ bash full_train_test.bash
 bash full_train_test.bash
 
 ```
+
+## Cite
+
+@inproceedings{mo2021longterm,
+  title={Long-term Head Pose Forecasting Conditioned on the Gaze-guiding Prior},
+  author={Shentong Mo and Miao Xin},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+  year={2021}
+}
