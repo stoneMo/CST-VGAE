@@ -1,7 +1,7 @@
 
 # Long-term Head Pose Forecasting Conditioned on the Gaze-guiding Prior
 
-**[accepted to CVPR Workshop 2021]**
+**[accepted to 2021 CVPR Workshop]**
 
 ![alt text](https://github.com/stoneMo/CST-VGAE/blob/main/imgs/title_image.png?raw=true)
 
