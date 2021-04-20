@@ -3,7 +3,7 @@
 
 **[accepted to CVPR Workshop 2021]**
 
-![alt text](https://github.com/stoneMo/CST-VGAE/blob/imgs/title_image.png?raw=true)
+![alt text](https://github.com/stoneMo/CST-VGAE/imgs/title_image.png?raw=true)
 
 ## Abstract
 
