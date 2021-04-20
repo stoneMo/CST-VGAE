@@ -110,7 +110,7 @@ bash full_train_test.bash
 @inproceedings{mo2021longterm,
   title={Long-term Head Pose Forecasting Conditioned on the Gaze-guiding Prior},
   author={Shentong Mo and Miao Xin},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops},
   year={2021}
 }
 
