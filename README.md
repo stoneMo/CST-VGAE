@@ -3,11 +3,11 @@
 
 **[accepted to CVPR Workshop 2021]**
 
-![alt text](https://github.com/stoneMo/CST-VGAE/blob/main/imgs/title_image.png?raw=true)
-
 ## Abstract
 
 Forecasting head pose future states is a novel task in computer vision. Since future may have many possibilities, and the logical results are much more important than the impractical ones, the forecasting results for most of the sce- narios should be not only diverse but also logically realistic. These requirements pose a real challenge to the current methods, which motivates us to seek for better head pose representation and methods to restrict the forecasting reasonably. In this paper, we adopt a spatial-temporal graph to model the interdependencies between the distribution of landmarks and head pose angles. Furthermore, we propose the conditional spatial-temporal variational graph autoencoder (CST-VGAE), a deep conditional generative model for learning restricted one-to-many mappings conditioned on the spatial-temporal graph input. Specifically, we improve the proposed CST-VGAE for the long-term head pose forecasting task in terms of several aspects. First, we introduce a gaze-guiding prior based on the physiology. Then we apply a temporal self-attention and self-supervised learning mechanism to learn the long-range dependencies on the gaze prior. To better model head poses structurally, we introduce a Gaussian Mixture Model (GMM), instead of a fixed Gaussian in the encoded latent space. Experiments demonstrate the effectiveness of the proposed method for the long-term head pose forecasting task. We achieve superior forecasting performance on the benchmark datasets compared to the existing methods.
+
+![alt text](https://github.com/stoneMo/CST-VGAE/blob/main/imgs/title_image.png?raw=true)
 
 ## Requirements
 
